@@ -1,0 +1,27 @@
+:root{
+    --primary-color: hsl(257, 40%, 49%);
+    --secondary-color: hsl(300, 69%, 71%);
+
+    --primary-fontFamily: 'Poppins', sans-serif;
+    --secondary-fontFamily: 'Open Sans', sans-serif;
+
+    --regular-fontWeight: 400;
+    --medium-fontWeight: 600;
+
+    --desktop-screen: 1140px;
+    --mobile-screen: 375px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--secondary-fontFamily);
+    font-weight: var(--regular-fontWeight);
+
+    background-image: url(./images/bg-desktop.svg);
+    background-color: var(--primary-color);
+}
