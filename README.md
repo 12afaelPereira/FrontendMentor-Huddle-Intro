@@ -21,7 +21,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 ### Links
 
 - Solution URL: [Github](https://github.com/12afaelPereira/FrontendMentor-Huddle-Intro)
-- Live Site URL: [Demo](frontend-mentor-huddle-intro.vercel.app)
+- Live Site URL: [Demo](http://frontend-mentor-huddle-intro.vercel.app/)
 
 ## My process
 
