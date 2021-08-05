@@ -1,3 +1,4 @@
+/* variables */
 :root{
     --primary-color: hsl(257, 40%, 49%);
     --secondary-color: hsl(300, 69%, 71%);
@@ -12,6 +13,7 @@
     --mobile-screen: 375px;
 }
 
+/* reset */
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +29,7 @@ body{
     background-color: var(--primary-color);
 }
 
+/* header */
 .logo{
     margin-top: 40px;
     margin-bottom: 50px;
@@ -38,6 +41,7 @@ body{
     
 }
 
+/* main */
 .main{
     display: flex;
     flex-direction: column;
@@ -82,10 +86,14 @@ body{
     font-family: var(--primary-fontFamily);
     font-weight: var(--regular-fontWeight);
     
-    border-radius: 21px;
+    border-radius: 27px;
     border: none;
+    box-shadow: -1px 10px 32px -4px rgba(0,0,0,0.5);
+    -webkit-box-shadow: -1px 10px 32px -4px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 10px 32px -4px rgba(0,0,0,0.5);
 }
 
+/* footer */
 footer{
     margin-top: 63px;
     margin-bottom: 40px;
@@ -104,38 +112,47 @@ footer{
     margin-right: 12px;
 }
 
-.socials a{
-    border: solid 1px white;
-    padding: 8px;
-    border-radius: 100%;
-}
-
-.socials li:first-child a{
-    padding: 8px 11px;
-}
-
-.socials li:last-child a{
-    padding: 8px 9px;
-}
-
 .socials i{
     color: white;
     font-size: 20px;
+
+    padding: 8px;
+    border: solid 1px white;
+    border-radius: 100%;
 }
 
+.socials li:first-child i{
+    padding: 8px 11px;
+}
 
+.socials li:last-child i{
+    padding: 8px 9px;
+}
 
+/* Tablet, Ipad*/
 @media screen and (min-width: 376px) {
     body{
         background-image: url(./images/bg-desktop.svg);
     }
+    
+    .main aside h1{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .main aside p{
+        max-width: 500px;
+    }
+
 }
 
+/* Desktop */
 @media (min-width: 1025px){
     body{
         background-size: initial;
     }
 
+    /* header */
     .logo{
         margin-bottom: 95px;
         margin-left: 80px;
@@ -145,6 +162,7 @@ footer{
         width: 200px;
     }
 
+    /* main */
     .main{
         flex-direction: row;
         align-items: start;
@@ -162,13 +180,14 @@ footer{
 
     .main aside{
         max-width: 510px;
-        margin: 40px 38px 0px 45px;
+        margin: 40px 0px 0px 45px;
     }
 
     .main aside h1{
-        max-width: 440px;
+        margin: 0;
         font-size: 2.5em;
         text-align: initial;
+        max-width: initial;
     }
 
     .main aside p{
@@ -186,25 +205,20 @@ footer{
         color: white;
     }
 
+    /* footer */
     footer{
-        margin: 0;
+        max-width: 1440px;
+        margin-right: 80px;
+        margin-bottom: 0;
+        padding-bottom: 15px;
     }
 
     .socials{
-        position: absolute;
-        bottom: 40px;
-        right: 80px;
-    }
-
-    .socials li:hover{
-        color: var(--secondary-color);
-    }
-
-    .socials a:hover{
-        /* border: solid 1px var(--secondary-color); */
+        justify-content: flex-end;
     }
 
     .socials i:hover{
-        /* color: var(--secondary-color); */
+        color: var(--secondary-color);
+        border-color: var(--secondary-color);
     }
 }
